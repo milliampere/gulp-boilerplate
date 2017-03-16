@@ -1,3 +1,13 @@
+
+// Fonts
+$heading: Georgia, sans-serif;
+$paragraf: Georgia, sans-serif;
+
+// Colors
+$background: #FFF;
+$white: #FFF; 
+$grey: #57676e;
+
 html{
 	height: 100%;
 	width: 100%;
@@ -9,13 +19,25 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #cf4547;
-	color: #fff;
-	font: 100%/1.5 sans-serif;
-
+	background-color: $background;
+	color: $grey;
+	font: 100%/1.5 $paragraf;
 }
 
 *, *:after, *:before{
 	margin: 0;
 	padding: 0;
+	box-shadow: border-box;
 }
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading;
+}
+
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.375rem;}
+h4 {font-size: 1.125rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: 0.875rem;}
